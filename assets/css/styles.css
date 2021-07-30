@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@1,500&display=swap');
+/* 
+font-family: 'Fredoka One', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #56b3db80;
+}
+
+.primaryFont {
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.secondaryFont{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper h1 a{
+    width: 250px;
+    font-size: 19px;
+}
+
+.cardContainer {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    
+}
+
+#mainHeader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.animateThis {
+    background: linear-gradient(313deg, #1bc89c, #145f92, #078e36, #10ccac);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+
+
+.myCard {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+.overlay {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.myCard:hover .overlay {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#projects {
+    min-height: 100vh;
+}
+
+#aboutMe{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi {
+    font-size: 18px;
+    color: black;
+}
+
+.curved {
+    position: relative;
+    background: #2c3e50;
+    height: 25vh;
+    border-bottom-left-radius: 50% 21%;
+    border-bottom-right-radius: 50% 21%;
+
+  }
