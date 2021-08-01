@@ -129,3 +129,7 @@ body {
     border-bottom-right-radius: 50% 21%;
 
   }
+
+div p  {
+    font-size: 1.6rem;
+}
